@@ -191,6 +191,21 @@ body{
 
 }
 /** Client-review Section End */
+/** FAQ Section Start */
+#faq{
+    margin-top: 20px ;
+    margin-bottom: 10px;
+}
+.faq-head{
+    margin-bottom: 40px;
+}
+.faq-head span{
+    color: var(--primary-color);
+}
+.faq-card .faq-card-img img{
+    width: 380px;
+}
+/** FAQ Section End */
 
 /** Media Query */
 @media (max-width: 1200px) {
@@ -280,6 +295,10 @@ body{
         line-height: 1.6;
         margin-bottom: 40px;
         padding-right: 20px;
+    }
+    /* FAQ */
+    .faq-card .faq-card-img img{
+        width: 90%;
     }
 
 }
