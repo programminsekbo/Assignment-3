@@ -28,6 +28,13 @@ body{
     background-color: #ca5537;
     color: var(--white);
 }
+.sub-head{
+    text-align: center;
+}
+.sub-head h2{
+    font-size: 48px;
+    font-weight: 600;
+}
 /** Header Section Start */
 #header-section{
     height: 100vh ;
@@ -69,7 +76,46 @@ body{
     font-weight: 300;
 }
 /** Header Section End */
-
+/** Feature Section Start */
+#feature{
+    margin-top: 100px;
+    height: min-content;
+}
+.feature-head{
+    margin-bottom: 45px;
+}
+.feature-head p{
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+}
+.feature-head p span{
+    display: block;
+    height: 2px;
+    background-color: #ca5537;
+    position: absolute;
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-top: 3px;
+}
+.feature-img .img-box {
+    display: flex;
+    justify-content: center;
+}
+.feature-img .img-box img{
+    width: 250px;
+}
+.feature-img .img-box:not(.orriginal) img{
+    filter: grayscale();
+    -webkit-filter: grayscale();
+}
+/** Feature Section End */
 
 /** Media Query */
 @media (max-width: 1200px) {
@@ -77,6 +123,9 @@ body{
     .primary-btn{
         padding: 8px 30px ;
         font-size: 20px;
+    }
+    .sub-head h2{
+        font-size: 44px;
     }
     /* Hero */
     .hero-content h1{
@@ -92,11 +141,9 @@ body{
         padding: 6px 25px ;
         font-size: 18px;
     }
-    /* Feature */
-    .feature-img .img-box img{
-        width: 200px;
+    .sub-head h2{
+        font-size: 38px;
     }
-
     .hero-content h1{
         font-size: 50px;
         margin-top: -130px;
@@ -107,12 +154,19 @@ body{
         margin-bottom: 30px;
         padding-right: 10px;
     }
+    /* Feature */
+    .feature-img .img-box img{
+        width: 200px;
+    }
 }
 @media (max-width: 767px) {
     /* Same Classes */
     .primary-btn{
         padding: 5px 22px ;
         font-size: 16px;
+    }
+    .sub-head h2{
+        font-size: 32px;
     }
     /* Hero  */
     .hero-content{
@@ -129,6 +183,10 @@ body{
         line-height: 1.7;
         margin-bottom: 40px;
 
+    }
+    /* Feature  */
+    .feature-img .img-box {
+        margin-bottom: 50px;
     }
 
 }
